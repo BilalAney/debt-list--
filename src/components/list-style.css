@@ -1,0 +1,81 @@
+/** @format */
+
+.list-item {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+div.list-item:hover {
+  background-color: rgba(228, 183, 99, 0.74);
+}
+
+.item--avatar {
+  height: 62px;
+  border-radius: 31px;
+}
+
+.the-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.resetWin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.right-se {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  place-content: center;
+  padding: 15px;
+  width: max-content;
+  min-width: 100px;
+  max-height: 17rem;
+  background-color: rgba(211, 211, 211, 0.534);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.input-ctn {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 150px);
+}
+
+form {
+  padding: 8px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.female-ctn,
+.male-ctn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.contextMenu {
+  position: absolute;
+  top: 5px;
+  left: -70px;
+}
+
+.contextMenu button {
+  background-color: rgb(248, 118, 118);
+}
