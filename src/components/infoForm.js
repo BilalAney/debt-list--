@@ -26,7 +26,7 @@ export default function InfoForm(props) {
     <div className="right-se">
       {!props.owe ? (
         <Form
-          title={`SPLIT BILL WITH ${props.name.toUpperCase()}`}
+          title={`SPLIT A BILL WITH ${props.name.toUpperCase()}`}
           buttonLabel="Split Bill"
           handleSubmit={(e) => props.handleSubmit(e, formData)}
         >

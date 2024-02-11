@@ -4,11 +4,12 @@ import { useState, useId, useEffect } from "react";
 import "./App.css";
 import InfoForm from "./components/infoForm";
 import List from "./components/list";
+import Footer from "./components/Footer";
 
 function App() {
   //---- The states
 
-  //this one is used to determine the current data items
+  //this one is used to determine the current data items(saved in the local storage)
   const lastData = JSON.parse(localStorage?.getItem("data"));
 
   //state to hold the data
@@ -140,6 +141,7 @@ function App() {
           <span>🔴your friends owe you: {otherOwe * -1}</span>
           <span>💲total: {youOwe + otherOwe}</span>
         </div>
+        <Footer />
       </div>
     </>
   );

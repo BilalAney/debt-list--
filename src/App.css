@@ -4,6 +4,7 @@
   text-align: center;
   display: grid;
   grid-template-columns: max-content min-content;
+  grid-template-rows: auto auto auto;
   gap: 15px;
   place-content: center;
   justify-items: center;
@@ -89,6 +90,20 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+footer {
+  grid-row: 3;
+  margin: 25px;
+  padding: 12px;
+  color: rgb(242, 169, 95);
+  font-size: 17px;
+  font-style: italic;
+  font-family: inherit;
+}
+
+footer p span {
+  color: rgb(206, 118, 4);
 }
 
 @media screen and (width < 500px) {
